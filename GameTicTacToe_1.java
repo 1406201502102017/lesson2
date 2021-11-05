@@ -102,7 +102,7 @@ public class GameTicTacToe_1 {
 //        return false;
 //    }
 
-    public static char checkWin(char dot) {
+    public static char checkWin() {
         char win = ' ';
         // Проверка по горизонтали
         for (int i = 0; i < 3; i++) {
