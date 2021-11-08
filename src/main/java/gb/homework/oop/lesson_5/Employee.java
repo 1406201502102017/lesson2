@@ -55,7 +55,7 @@ public class Employee {
 
         for (int i = 0; i < 5; i++) {
             int age;
-            if(int age > 40){
+            if (int age > 40){
                 System.out.println(employee[i].age);
             }
         }
