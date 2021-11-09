@@ -46,18 +46,22 @@ public class Employee {
     public static void employeeArr() {
 
         Employee[] employee = new Employee[5];
-
+        
+                 while (true) {
+                    int age = 40;
+                    if (age >= 40) {
+                        
+                    System.out.println(Arrays.toString(employee));
+                        
         employee[0] = new Employee("Ivan I. Petroff", "CEO", "I.Petroff_CEO@list.ru", "+7-524-568-12-45", 250000, 47);
         employee[1] = new Employee("Sergey D. Sidorov", "Manager", "S.Sidorov_manag@mail.ru", "+7-984-238-17-21", 200000, 42);
         employee[2] = new Employee("John C. Smith", "Creator", "J.Smith_Cre@gmail.com", "+5-424-448-27-85", 235000, 34);
         employee[3] = new Employee("Vasya L. Ivanov", "Driver", "V.Ivanov_Driv@yandex.ru", "+7-224-478-56-01", 90000, 38);
         employee[4] = new Employee("Vika A. Kozlova", "Accauntant", "V.Kozlova_Acca@mail.ru", "+7-244-777-82-65", 150000, 30);
 
-        for (int i = 0; i < 5; i++) {
-            int age;
-            if (int age > 40){
-                System.out.println(employee[i].age);
-            }
+            } else {
+                System.out.println("Всем меньше 40 лет");
+            } break;
         }
     }
 }
