@@ -1,5 +1,7 @@
 package gb.homework.oop.lesson_5;
 
+import java.util.Arrays;
+
 public class Employee {
     /*
     1. Создать класс "Сотрудник" с полями: ФИО, должность, email, телефон, зарплата, возраст.
