@@ -49,7 +49,7 @@ public class Employee {
 
         Employee[] employee = new Employee[5];
         
-                 while (true) {
+                 for (int i = 0; i < 0; i++) {
                     int age = 40;
                     if (age >= 40) {
                         
