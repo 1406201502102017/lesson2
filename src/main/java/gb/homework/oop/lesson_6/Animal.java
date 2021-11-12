@@ -23,7 +23,6 @@ public class Animal {
     public void setDistanceSwim(int distanceSwim) {
         this.distanceSwim = distanceSwim;
     }
-
     public static void main(String[] args) {
         Cat cat = new Cat("Murzik", 30, 100);
         Dog dog = new Dog("Sharik", 10, 300);
