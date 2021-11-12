@@ -1,11 +1,7 @@
 package gb.homework.oop.lesson_6;
 
-//import.
-//import.
-
 public class Animal {
     protected String name;
-    protected String notSwim;
     protected int distanceRun;
     protected int distanceSwim;
 
@@ -27,20 +23,14 @@ public class Animal {
     public void setDistanceSwim(int distanceSwim) {
         this.distanceSwim = distanceSwim;
     }
-    public String getNotSwim() {
-        return notSwim;
-    }
-    public void setNotSwim(String notSwim) {
-        this.notSwim = notSwim;
-    }
 
-//    public static void main(String[] args) {
-//        Cat cat = new Cat("Murzik", " is can't swims", 150);
-//        Dog dog = new Dog("Sharik", 100, 200);
-//
-//        cat.swim();
-//        cat.run();
-//        dog.swim();
-//        dog.run();
-//    }
+    public static void main(String[] args) {
+        Cat cat = new Cat("Murzik", 30, 100);
+        Dog dog = new Dog("Sharik", 10, 300);
+
+        cat.swim();
+        cat.run();
+        dog.swim();
+        dog.run();
+    }
 }

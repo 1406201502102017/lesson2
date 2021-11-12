@@ -1,42 +1,32 @@
 package gb.homework.oop.lesson_6;
 
-public class Cat extends Animal {
-//    private String name;
-//    private String notSwim;
-//    private int distanceRun;
+/*
+1. Создать классы Собака и Кот с наследованием от класса Животное.
+2. Все животные могут бежать и плыть. В качестве параметра каждому
+методу передается длина препятствия. Результатом выполнения действия
+будет печать в консоль. (Например, dogBobik.run(150); -> 'Бобик пробежал 150 м.');
+3. У каждого животного есть ограничения на действия (бег: кот 200 м., собака 500 м.;
+плавание: кот не умеет плавать, собака 10 м.).
+4. * Добавить подсчет созданных котов, собак и животных.
+ */
 
-    public Cat(String name, String notSwim, int distanceRun) {
+public class Cat extends Animal {
+
+    public Cat(String name, int distanceSwim, int distanceRun) {
         this.name = name;
-        this.notSwim = notSwim;
         this.distanceRun = distanceRun;
+        this.distanceSwim = distanceSwim;
     }
     public void run() {
-        System.out.println("Cat " + name + " is runs " + distanceRun + " meters");
+        if (distanceRun <= 200 && distanceRun > 0) {
+            System.out.println("Cat " + name + " was runs " + distanceRun + " meters");
+        } else {
+            System.out.println("Cat " + name + " is too tyred");
+        }
     }
     public void swim() {
-        System.out.println("Cat " + name + notSwim);
+        if (distanceSwim >= 0 || distanceSwim <= 0) {
+            System.out.println("Cat " + name + " is can't swims!");
+        }
     }
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public int getDistanceRun() {
-//        return distanceRun;
-//    }
-//
-//    public void setDistanceRun(int distanceRun) {
-//        this.distanceRun = distanceRun;
-//    }
-//
-//    public String getNotSwim() {
-//        return notSwim;
-//    }
-//
-//    public void setNotSwim(String notSwim) {
-//        this.notSwim = notSwim;
-//    }
 }
