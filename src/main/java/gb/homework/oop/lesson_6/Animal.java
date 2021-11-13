@@ -41,6 +41,5 @@ public class Animal {
         dog.run();
 
     System.out.println("Cats: " + Cat.getCount() + "\nDogs: " + Dog.getCount());
-    //System.out.println("Dogs: " + Dog.getCount());
     }
 }
