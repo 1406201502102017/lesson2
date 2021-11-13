@@ -40,7 +40,7 @@ public class Animal {
         dog.swim();
         dog.run();
 
-    System.out.println("Cats: " + Cat.getCount());
-    System.out.println("Dogs: " + Dog.getCount());
+    System.out.println("Cats: " + Cat.getCount() + "\nDogs: " + Dog.getCount());
+    //System.out.println("Dogs: " + Dog.getCount());
     }
 }
