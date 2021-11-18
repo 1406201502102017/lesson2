@@ -19,3 +19,4 @@ public class Plate extends MainClass {
         System.out.println("plate: " + food);
     }
 }
+

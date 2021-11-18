@@ -22,3 +22,4 @@ public class Cat extends MainClass {
         return name + " " + appetite + " " + satiety;
     }
 }
+
