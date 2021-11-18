@@ -1,6 +1,6 @@
 package gb.homework.oop.lesson_7;
 
-public class Plate {
+public class Plate extends MainClass {
 
     private int food;
 

@@ -1,6 +1,6 @@
 package gb.homework.oop.lesson_7;
 
-public class Cat {
+public class Cat extends MainClass {
 
     private String name;
     private int appetite;
@@ -13,9 +13,12 @@ public class Cat {
 
     public void eat(Plate p) {
         if (p.decreaseFood(appetite)) {
-            System.out.println();
+            System.out.println("The cat " + name + " is happy");
             satiety = true;
-        } System.out.println("The cat " + name + " is happy");
+        }
         //p.decreaseFood(appetite);
+    }
+    public String toString() {
+        return name + " " + appetite + " " + satiety;
     }
 }

@@ -12,9 +12,10 @@ package gb.homework.oop.lesson_7;
 6. Добавить в тарелку метод, с помощью которого можно было бы добавлять еду в тарелку.
  */
 
+import java.util.Arrays;
+
 public class MainClass {
 
-    private String name;
     private int appetite;
     private int food;
 
@@ -30,19 +31,28 @@ public class MainClass {
     public void setAppetite(int appetite) {
         this.appetite = appetite;
     }
-//        if (food < appetite) {
-//        System.out.print("All cats will be hungry!");
-//    }
 
     public static void main(String[] args) {
 
-        Plate plate = new Plate(20);
+        Plate plate = new Plate(150);
         Cat cat = new Cat("Bazilio", 21);
 
         plate.info();
         cat.eat(plate);
         plate.info();
-
+        System.out.println();
         //plate.setFood(plate.getFood() - cat.getAppetite());
+
+        Cat[] cats = { new Cat("Bazilio", 151),
+                       new Cat("Tom", 49),
+                       new Cat("Markiz", 5),
+                       new Cat("Jerry", 101)};
+
+            for (int i = 0; i < cats.length; i++) {
+                cat.eat(plate);
+
+                System.out.println(cats);
+                System.out.println(cats.toString());
+        }
     }
 }
