@@ -20,3 +20,4 @@ public class Wall {
         System.out.print(human.name + cat.name + robot.name);
 	        return false;
 }
+
