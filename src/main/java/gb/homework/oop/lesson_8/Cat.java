@@ -1,6 +1,6 @@
 package gb.homework.oop.lesson_8;
 
-public class Cat implements Competitors {
+public class Cat {
     private static String name;
     private static int run;
     private static int jump;
@@ -10,7 +10,6 @@ public class Cat implements Competitors {
         this.run = run;
         this.jump = jump;
     }
-    //@Override
     public String getName() {
         return this.name;
     }
@@ -18,7 +17,6 @@ public class Cat implements Competitors {
         Cat cat = new Cat("Tom", 100, 20);
         System.out.print("A cat named " + name + " runs " + run + " meters");
     }
-    //@Override
     public boolean run(int distance) {
         return this.run >= distance;
     }
@@ -26,7 +24,6 @@ public class Cat implements Competitors {
         Cat cat = new Cat("Tom", 100, 20);
         System.out.print(" and jumps up " + jump + " centimeters");
     }
-    //@Override
     public boolean jump(int height) {
         return this.jump >= height;
     }

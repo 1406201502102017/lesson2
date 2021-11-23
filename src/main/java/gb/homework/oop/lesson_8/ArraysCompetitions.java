@@ -13,14 +13,13 @@ public class ArraysCompetitions {
                 new Treadmill(1523),
                 new Wall(48)};
 
-        for (Competitors c : competitors) {
-            for (Equipment e : equipment) {
-                if (c < e) {
-                    break;
-                    System.out.print(human.name + cat.name + robot.name);
+        for (int i = 0; i < competitors.length; i++) {
+            for (int j = 0; j < equipment.length; j++) {
+                if (competitors[i] > equipment[j]) {
+                    System.out.print(competitors);
                 }
                 else {
-                    System.out.print("give up");
+                    break;
                 }
             }
         }

@@ -9,7 +9,7 @@ package gb.homework.oop.lesson_8;
     4. * У препятствий есть длина (для дорожки) или высота (для стены), а участников ограничения на бег и прыжки.
     Если участник не смог пройти одно из препятствий, то дальше по списку он препятствий не идет.
 */
-public class Human implements Competitors {
+public class Human {
 
     private static String name;
     private static int run;
@@ -20,7 +20,6 @@ public class Human implements Competitors {
         this.run = run;
         this.jump = jump;
     }
-    //@Override
     public String getName() {
         return this.name;
     }
@@ -28,7 +27,6 @@ public class Human implements Competitors {
          Human human = new Human("Jimmy", 1000, 70);
         System.out.print("A man named " + name + " runs " + run + " meters");
     }
-    //@Override
     public boolean run(int distance) {
         return this.run >= distance;
     }
@@ -36,7 +34,6 @@ public class Human implements Competitors {
         Human human = new Human("Jimmy", 1000, 30);
         System.out.print(" and jumps up " + jump + " centimeters");
     }
-    //@Override
     public boolean jump(int height) {
         return this.jump >= height;
     }

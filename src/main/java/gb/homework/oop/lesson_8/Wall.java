@@ -4,7 +4,7 @@ public class Wall {
 
     private final int height;
 
-    public interface WallIn {
+    public WallIn {
         boolean jump(int height);
         boolean jumper(Human human);
         boolean jumper(Cat cat);

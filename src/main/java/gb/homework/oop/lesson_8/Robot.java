@@ -1,6 +1,6 @@
 package gb.homework.oop.lesson_8;
 
-public class Robot implements Competitors {
+public class Robot {
 
     private static String model;
     private static int run;
@@ -12,7 +12,6 @@ public class Robot implements Competitors {
         this.run = run;
         this.jump = jump;
     }
-    //@Override
     public String getName() {
         return this.model;
     }
@@ -20,7 +19,6 @@ public class Robot implements Competitors {
         Robot robot = new Robot("XZ-57", 10000, 170);
         System.out.print("A robot model " + model + " runs " + run + " meters");
     }
-    //@Override
     public boolean run(int distance) {
         return this.run >= distance;
     }
@@ -28,7 +26,6 @@ public class Robot implements Competitors {
         Robot robot = new Robot("XZ-57", 10000, 170);
         System.out.print(" and jumps up " + jump + " centimeters");
     }
-    //@Override
     public boolean jump(int height) {
         return this.jump >= height;
     }

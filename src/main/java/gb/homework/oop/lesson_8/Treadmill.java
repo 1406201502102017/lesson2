@@ -4,7 +4,7 @@ public class Treadmill {
 
     private final int distance;
 
-    public interface TreadmillIn {
+    public TreadmillIn {
         boolean run(int distance);
         boolean runner(Human human);
         boolean runner(Cat cat);
